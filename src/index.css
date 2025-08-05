@@ -2,57 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Solar System Design System - Cosmic theme with deep space aesthetics
+All colors MUST be HSL for proper theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Deep space backgrounds */
+    --background: 220 30% 8%;
+    --foreground: 210 40% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Cosmic cards and surfaces */
+    --card: 220 25% 12%;
+    --card-foreground: 210 40% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 25% 12%;
+    --popover-foreground: 210 40% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Stellar primary colors */
+    --primary: 240 100% 75%;
+    --primary-foreground: 220 30% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Nebula secondary colors */
+    --secondary: 280 60% 25%;
+    --secondary-foreground: 210 40% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted cosmic tones */
+    --muted: 220 20% 18%;
+    --muted-foreground: 210 15% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Galactic accent colors */
+    --accent: 260 80% 60%;
+    --accent-foreground: 220 30% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Warning colors for destructive actions */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Space borders and inputs */
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 240 100% 75%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Planet-specific colors */
+    --mercury: 30 50% 60%;
+    --venus: 45 80% 70%;
+    --earth: 210 80% 50%;
+    --mars: 15 80% 55%;
+    --jupiter: 30 70% 50%;
+    --saturn: 50 60% 65%;
+    --uranus: 180 60% 70%;
+    --neptune: 220 80% 60%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Cosmic gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(260 80% 20%), hsl(240 70% 30%), hsl(280 60% 25%));
+    --gradient-stellar: linear-gradient(45deg, hsl(240 100% 75%), hsl(260 80% 60%));
+    --gradient-nebula: linear-gradient(180deg, hsl(280 60% 25%), hsl(220 25% 12%));
+    --gradient-planetary: radial-gradient(circle, hsl(240 100% 75% / 0.2), transparent 70%);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Cosmic shadows and glows */
+    --shadow-cosmic: 0 25px 50px -12px hsl(240 100% 75% / 0.3);
+    --shadow-stellar: 0 0 40px hsl(240 100% 75% / 0.4);
+    --glow-planet: 0 0 30px hsl(var(--accent) / 0.5);
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* Animations */
+    --transition-cosmic: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --transition-orbital: transform 20s linear infinite;
 
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar space theme */
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 240 100% 75%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 240 100% 75%;
   }
 
   .dark {
