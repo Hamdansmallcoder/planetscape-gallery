@@ -73,15 +73,15 @@ export default {
 				neptune: 'hsl(var(--neptune))'
 			},
 			backgroundImage: {
-				'gradient-cosmic': 'var(--gradient-cosmic)',
-				'gradient-stellar': 'var(--gradient-stellar)',
-				'gradient-nebula': 'var(--gradient-nebula)',
-				'gradient-planetary': 'var(--gradient-planetary)'
+				'gradient-cosmic': 'linear-gradient(135deg, hsl(260 80% 20%), hsl(240 70% 30%), hsl(280 60% 25%))',
+				'gradient-stellar': 'linear-gradient(45deg, hsl(240 100% 75%), hsl(260 80% 60%))',
+				'gradient-nebula': 'linear-gradient(180deg, hsl(280 60% 25%), hsl(220 25% 12%))',
+				'gradient-planetary': 'radial-gradient(circle, hsla(240, 100%, 75%, 0.2), transparent 70%)'
 			},
 			boxShadow: {
-				'cosmic': 'var(--shadow-cosmic)',
-				'stellar': 'var(--shadow-stellar)',
-				'planet-glow': 'var(--glow-planet)'
+				'cosmic': '0 25px 50px -12px hsla(240, 100%, 75%, 0.3)',
+				'stellar': '0 0 40px hsla(240, 100%, 75%, 0.4)',
+				'planet-glow': '0 0 30px hsla(260, 80%, 60%, 0.5)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -114,8 +114,8 @@ export default {
 					'100%': { transform: 'rotate(360deg)' }
 				},
 				'pulse-glow': {
-					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.4)' },
-					'50%': { boxShadow: '0 0 40px hsl(var(--primary) / 0.8)' }
+					'0%, 100%': { boxShadow: '0 0 20px hsla(240, 100%, 75%, 0.4)' },
+					'50%': { boxShadow: '0 0 40px hsla(240, 100%, 75%, 0.8)' }
 				},
 				'twinkle': {
 					'0%, 100%': { opacity: '0.3' },
@@ -133,11 +133,7 @@ export default {
 				'orbit-fast': 'orbit 15s linear infinite',
 				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
 				'twinkle': 'twinkle 2s ease-in-out infinite'
-			},
-			transitionProperty: {
-				'cosmic': 'var(--transition-cosmic)'
 			}
-		}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

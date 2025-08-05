@@ -35,9 +35,6 @@ export const PlanetCard = ({ planet, index }: PlanetCardProps) => {
               group-hover:animate-float transition-transform duration-300
               shadow-lg group-hover:shadow-planet-glow
             `}
-            style={{
-              background: `linear-gradient(135deg, hsl(var(--${planet.color})), hsl(var(--${planet.color}) / 0.8))`
-            }}
           >
             <img 
               src={planet.image} 

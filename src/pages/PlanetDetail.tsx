@@ -45,9 +45,6 @@ export default function PlanetDetail() {
                     w-80 h-80 mx-auto rounded-full overflow-hidden
                     animate-float shadow-cosmic
                   `}
-                  style={{
-                    background: `radial-gradient(circle, hsl(var(--${planet.color})), hsl(var(--${planet.color}) / 0.6))`
-                  }}
                 >
                   <img 
                     src={planet.image} 

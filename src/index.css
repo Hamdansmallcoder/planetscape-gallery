@@ -56,21 +56,6 @@ All colors MUST be HSL for proper theming.
     --uranus: 180 60% 70%;
     --neptune: 220 80% 60%;
 
-    /* Cosmic gradients */
-    --gradient-cosmic: linear-gradient(135deg, hsl(260 80% 20%), hsl(240 70% 30%), hsl(280 60% 25%));
-    --gradient-stellar: linear-gradient(45deg, hsl(240 100% 75%), hsl(260 80% 60%));
-    --gradient-nebula: linear-gradient(180deg, hsl(280 60% 25%), hsl(220 25% 12%));
-    --gradient-planetary: radial-gradient(circle, hsl(240 100% 75% / 0.2), transparent 70%);
-
-    /* Cosmic shadows and glows */
-    --shadow-cosmic: 0 25px 50px -12px hsl(240 100% 75% / 0.3);
-    --shadow-stellar: 0 0 40px hsl(240 100% 75% / 0.4);
-    --glow-planet: 0 0 30px hsl(var(--accent) / 0.5);
-
-    /* Animations */
-    --transition-cosmic: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --transition-orbital: transform 20s linear infinite;
-
     /* Sidebar space theme */
     --sidebar-background: 220 25% 10%;
     --sidebar-foreground: 210 40% 90%;
